@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,138 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PetLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Square logo PetScanner no background Final Black - 500x500 pixels" translatesAutoresizingMaskIntoConstraints="NO" id="J1G-Mi-lM0">
+                                <rect key="frame" x="164.5" y="24" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="R8i-Yu-21Z"/>
+                                    <constraint firstAttribute="width" constant="46" id="eVY-y4-VaN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfY-XV-qrh">
+                                <rect key="frame" x="16" y="123" width="343" height="469"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoT-JV-dWr">
+                                <rect key="frame" x="166.5" y="148" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6R-qY-XTV">
+                                <rect key="frame" x="90" y="230" width="195" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ud-mL-xg4">
+                                <rect key="frame" x="75.5" y="276" width="224" height="61"/>
+                                <color key="backgroundColor" red="0.1551084967426494" green="0.7762508095854922" blue="0.57715300539409131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="ffh-ox-rmb"/>
+                                    <constraint firstAttribute="height" constant="61" id="zud-Se-NMo"/>
+                                </constraints>
+                                <state key="normal" title="Log in with Petscanner">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rR-Ky-t5F">
+                                <rect key="frame" x="75.5" y="357" width="224" height="61"/>
+                                <color key="backgroundColor" red="1" green="0.033788843239999998" blue="0.059221068850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="WVx-BX-p1m"/>
+                                    <constraint firstAttribute="width" constant="224" id="X34-0V-6og"/>
+                                </constraints>
+                                <state key="normal" title="Log in with Google">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6V9-vJ-jai">
+                                <rect key="frame" x="75.5" y="479" width="224" height="61"/>
+                                <color key="backgroundColor" red="0.16470588235294117" green="0.17647058823529413" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="2JQ-z8-GLh"/>
+                                    <constraint firstAttribute="height" constant="61" id="o1T-7d-B75"/>
+                                </constraints>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EULA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKO-sS-C4s">
+                                <rect key="frame" x="63" y="566" width="33.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMg-OX-dXo">
+                                <rect key="frame" x="121.5" y="566" width="132" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rw7-hx-GwI">
+                                <rect key="frame" x="264.5" y="566" width="84" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ⒸPetScanner Ltd." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="os2-2x-tcW">
+                                <rect key="frame" x="119" y="610" width="137" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="3Iy-cp-bCh"/>
+                                    <constraint firstAttribute="height" constant="21" id="hO9-J4-sbR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4a-cg-TT3">
+                                <rect key="frame" x="178" y="442" width="19" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.16494273805606466" green="0.17458024177818515" blue="0.21366985103626945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6V9-vJ-jai" firstAttribute="top" secondItem="K4a-cg-TT3" secondAttribute="bottom" constant="16" id="04F-Dw-xv0"/>
+                            <constraint firstItem="J1G-Mi-lM0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0XW-eg-xak"/>
+                            <constraint firstItem="Rw7-hx-GwI" firstAttribute="leading" secondItem="KMg-OX-dXo" secondAttribute="trailing" constant="11" id="ARt-v3-vgw"/>
+                            <constraint firstItem="3rR-Ky-t5F" firstAttribute="top" secondItem="3Ud-mL-xg4" secondAttribute="bottom" constant="20" id="BsP-FP-Q22"/>
+                            <constraint firstItem="6V9-vJ-jai" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="E7g-rC-qgu"/>
+                            <constraint firstItem="os2-2x-tcW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gst-eb-mEd"/>
+                            <constraint firstItem="os2-2x-tcW" firstAttribute="top" secondItem="KMg-OX-dXo" secondAttribute="bottom" constant="28" id="In1-Nd-pjA"/>
+                            <constraint firstItem="3rR-Ky-t5F" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ljq-vL-KiJ"/>
+                            <constraint firstItem="os2-2x-tcW" firstAttribute="top" secondItem="Rw7-hx-GwI" secondAttribute="bottom" constant="28" id="QPT-vB-dbg"/>
+                            <constraint firstItem="KMg-OX-dXo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Uib-iG-YhV"/>
+                            <constraint firstItem="3Ud-mL-xg4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XFh-lO-BuC"/>
+                            <constraint firstItem="hoT-JV-dWr" firstAttribute="top" secondItem="J1G-Mi-lM0" secondAttribute="bottom" constant="78" id="bX9-aO-AcL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="os2-2x-tcW" secondAttribute="bottom" constant="36" id="blw-y1-OJA"/>
+                            <constraint firstItem="J1G-Mi-lM0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="dwm-bN-8si"/>
+                            <constraint firstItem="os2-2x-tcW" firstAttribute="top" secondItem="sKO-sS-C4s" secondAttribute="bottom" constant="28" id="hTt-uR-tcg"/>
+                            <constraint firstItem="KMg-OX-dXo" firstAttribute="leading" secondItem="sKO-sS-C4s" secondAttribute="trailing" constant="25" id="kGM-xs-cgh"/>
+                            <constraint firstItem="K4a-cg-TT3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lvZ-gF-Xuc"/>
+                            <constraint firstItem="3Ud-mL-xg4" firstAttribute="top" secondItem="P6R-qY-XTV" secondAttribute="bottom" constant="25" id="niW-bo-8rW"/>
+                            <constraint firstItem="K4a-cg-TT3" firstAttribute="top" secondItem="3rR-Ky-t5F" secondAttribute="bottom" constant="24" id="rsq-bc-9mE"/>
+                            <constraint firstItem="P6R-qY-XTV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tF0-sE-46h"/>
+                            <constraint firstItem="P6R-qY-XTV" firstAttribute="top" secondItem="hoT-JV-dWr" secondAttribute="bottom" constant="61" id="tY0-6T-YCh"/>
+                            <constraint firstItem="hoT-JV-dWr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yZh-6q-kxV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Square logo PetScanner no background Final Black - 500x500 pixels" width="500" height="417"/>
+    </resources>
 </document>
