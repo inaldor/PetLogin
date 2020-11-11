@@ -9,9 +9,8 @@ This XML login UI is the result of my studies when developing in Xamarin.
 
 ## Pictures
 
-<img src="oooo" width=300>
-<img src="oooo" width=300>
+<img src="https://github.com/inaldor/PetLogin/blob/master/app-images/login.png" width=300>
 
 ## License
 
-This project is licensed under the [MIT License](oooo)
+This project is licensed under the [MIT License](https://github.com/inaldor/PetLogin/blob/master/LICENSE)
